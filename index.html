@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1425">
+  <meta name="description" content="UNDERVIA — a different way to learn English. Explore, understand, and express.">
+  <title>UNDERVIA — Explore. Understand. Express.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="UNDERVIA home">
+      <span class="brand-name">UNDERVIA</span>
+      <span class="brand-tagline">BORN FROM BEING UNDERESTIMATED.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#paths">Learning paths</a><a href="#dashboard">My progress</a><a href="#about">About</a>
+      <button class="nav-cta" data-open-vocab>Browse vocabulary <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A DIFFERENT WAY TO LEARN ENGLISH</div>
+        <h1>Make English<br><span>your own.</span></h1>
+        <p class="hero-description">A structured space to build vocabulary, sharpen your skills, and express yourself with confidence. Learn at your pace. Grow on your terms.</p>
+        <div class="hero-actions"><button class="primary-btn" data-open-vocab>Explore vocabulary <span>↗</span></button><a class="text-link" href="#paths">Discover learning paths <span>↓</span></a></div>
+        <div class="hero-note"><span class="status-dot"></span> 9 learning paths · Built to grow with you</div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-top"><span>YOUR LEARNING SPACE</span><span class="panel-index">01 / 09</span></div>
+        <div class="panel-feature">
+          <div class="feature-label">START WITH THE ESSENTIALS</div>
+          <h2>Words that<br>move you forward.</h2>
+          <p>Build a stronger foundation, one useful word at a time.</p>
+          <button class="panel-link" data-open-vocab>Open General English <span>→</span></button>
+        </div>
+        <div class="panel-bottom"><div><strong>150</strong><span>vocabulary entries</span></div><div><strong>A1–C2</strong><span>learning levels</span></div><div><strong>∞</strong><span>room to grow</span></div></div>
+        <div class="panel-orbit orbit-a"></div><div class="panel-orbit orbit-b"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap paths-section" id="paths">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR DIRECTION</div><h2>Choose your <span>learning path.</span></h2></div>
+        <p>Nine focused paths. One goal: helping you use English with greater clarity and confidence.</p>
+      </div>
+      <div class="path-grid" id="pathGrid"></div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+      <div class="section-wrap dashboard-inner">
+        <div class="dashboard-copy"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR PROGRESS, YOUR PACE</div><h2>Every word is<br><span>forward motion.</span></h2><p>Your learning activity stays on this device. Save words, track your progress, and return whenever you're ready.</p><button class="outline-btn" data-open-vocab>Continue learning <span>→</span></button></div>
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-icon">01</span><strong id="savedCount">0</strong><span>Saved words</span></div>
+          <div class="stat-card"><span class="stat-icon">02</span><strong id="learnedCount">0</strong><span>Words reviewed</span></div>
+          <div class="stat-card"><span class="stat-icon">03</span><strong id="pathCount">9</strong><span>Learning paths</span></div>
+          <div class="stat-card progress-card"><span class="stat-icon">04</span><strong id="progressPercent">0%</strong><span>General English progress</span><div class="progress-track"><i id="progressBar"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="about-mark">U.</div><div><div class="eyebrow"><span class="eyebrow-line"></span> THE IDEA BEHIND UNDERVIA</div><h2>Overlooked potential.<br><span>Unordinary outcomes.</span></h2><p>UNDERVIA is built on a simple belief: where you start does not define how far you can go. Learn with intention, understand beyond translation, and express what you really mean.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-name">UNDERVIA</span><span class="brand-tagline">BORN FROM BEING UNDERESTIMATED.</span></a><span>Explore. Understand. Express.</span><span>© <span id="year"></span> UNDERVIA</span></footer>
+
+  <div class="vocab-view" id="vocabView" aria-hidden="true">
+    <div class="vocab-header"><button class="back-btn" id="backHome">← <span>Back to home</span></button><a class="brand compact-brand" href="#home"><span class="brand-name">UNDERVIA</span><span class="brand-tagline">BORN FROM BEING UNDERESTIMATED.</span></a><span class="vocab-counter" id="vocabCounter">150 WORDS</span></div>
+    <div class="vocab-content">
+      <div class="vocab-intro"><div class="eyebrow"><span class="eyebrow-line"></span> LEARNING PATH / 01</div><h1>General <span>English.</span></h1><p>Useful vocabulary for everyday conversations, clearer communication, and real-life situations.</p></div>
+      <div class="vocab-toolbar"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search a word or meaning..." autocomplete="off"></label><select id="levelFilter" aria-label="Filter by level"><option value="all">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select><select id="sortSelect" aria-label="Sort vocabulary"><option value="az">A–Z</option><option value="za">Z–A</option></select><button class="saved-filter" id="savedFilter">♡ Saved <span id="savedFilterCount">0</span></button></div>
+      <div class="vocab-layout"><div class="word-list-wrap"><div class="list-caption"><span id="resultCount">150 WORDS</span><span>SELECT A WORD TO EXPLORE</span></div><div class="word-list" id="wordList"></div></div><article class="word-detail" id="wordDetail"><div class="detail-empty"><span class="detail-number">UNDERVIA / VOCABULARY</span><div class="empty-symbol">Aa</div><h2>Choose a word.</h2><p>Select any vocabulary entry to explore its meaning, pronunciation, examples, and usage.</p></div></article></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "general-english",
+    "name": "General English",
+    "description": "Everyday communication, practical vocabulary, and real-life English.",
+    "target": "150 words",
+    "number": "01"
+  },
+  {
+    "id": "grammar-vocabulary",
+    "name": "Grammar & Vocabulary",
+    "description": "Build accurate sentences and expand your command of English.",
+    "target": "Coming next",
+    "number": "02"
+  },
+  {
+    "id": "ielts",
+    "name": "IELTS Preparation",
+    "description": "Academic and General Training preparation across four skills.",
+    "target": "Coming next",
+    "number": "03"
+  },
+  {
+    "id": "toefl",
+    "name": "TOEFL Preparation",
+    "description": "Prepare for TOEFL iBT with academic English and focused practice.",
+    "target": "Coming next",
+    "number": "04"
+  },
+  {
+    "id": "toeic",
+    "name": "TOEIC Preparation",
+    "description": "Workplace English, business communication, listening and reading.",
+    "target": "Coming next",
+    "number": "05"
+  },
+  {
+    "id": "pte",
+    "name": "PTE Academic",
+    "description": "Computer-based academic English practice and preparation.",
+    "target": "Coming next",
+    "number": "06"
+  },
+  {
+    "id": "cambridge",
+    "name": "Cambridge English",
+    "description": "Level-based learning from B1 Preliminary to C2 Proficiency.",
+    "target": "Coming next",
+    "number": "07"
+  },
+  {
+    "id": "gre",
+    "name": "GRE Verbal",
+    "description": "Advanced vocabulary, text completion, and reading comprehension.",
+    "target": "Coming next",
+    "number": "08"
+  },
+  {
+    "id": "slang",
+    "name": "Slang & Expressions",
+    "description": "Natural American and British slang, idioms, and everyday expressions.",
+    "target": "Coming next",
+    "number": "09"
+  }
+]
